@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000271] (-) JobUnselected: {'identifier': 'lekiwi_control'}
-[0.000295] (-) JobUnselected: {'identifier': 'lekiwi_servo'}
-[0.000479] (-) EventReactorShutdown: {}

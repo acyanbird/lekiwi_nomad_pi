@@ -17,7 +17,6 @@ setup(
     maintainer_email='acy@todo.todo',
     description='ROS2 package for controlling Feetech servos',
     license='Apache License 2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'servo_controller = lekiwi_servo.servo_controller:main',
