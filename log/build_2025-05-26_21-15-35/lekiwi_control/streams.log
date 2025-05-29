@@ -1,0 +1,37 @@
+[0.406s] Invoking command in '/home/acy/lekiwi/lekiwi_ws/lekiwi_control': PYTHONPATH=/home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/lekiwi_control build --build-base /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build install --record /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/install.log --single-version-externally-managed install_data
+[0.552s] running egg_info
+[0.553s] creating ../build/lekiwi_control/lekiwi_control.egg-info
+[0.553s] writing ../build/lekiwi_control/lekiwi_control.egg-info/PKG-INFO
+[0.553s] writing dependency_links to ../build/lekiwi_control/lekiwi_control.egg-info/dependency_links.txt
+[0.553s] writing entry points to ../build/lekiwi_control/lekiwi_control.egg-info/entry_points.txt
+[0.553s] writing requirements to ../build/lekiwi_control/lekiwi_control.egg-info/requires.txt
+[0.553s] writing top-level names to ../build/lekiwi_control/lekiwi_control.egg-info/top_level.txt
+[0.553s] writing manifest file '../build/lekiwi_control/lekiwi_control.egg-info/SOURCES.txt'
+[0.555s] reading manifest file '../build/lekiwi_control/lekiwi_control.egg-info/SOURCES.txt'
+[0.555s] writing manifest file '../build/lekiwi_control/lekiwi_control.egg-info/SOURCES.txt'
+[0.555s] running build
+[0.555s] running build_py
+[0.555s] creating /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build
+[0.556s] creating /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build/lib
+[0.556s] creating /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build/lib/lekiwi_control
+[0.556s] copying lekiwi_control/cmd_vel_publisher.py -> /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build/lib/lekiwi_control
+[0.556s] copying lekiwi_control/__init__.py -> /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build/lib/lekiwi_control
+[0.556s] running install
+[0.556s] running install_lib
+[0.557s] creating /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/python3.10/site-packages/lekiwi_control
+[0.557s] copying /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build/lib/lekiwi_control/cmd_vel_publisher.py -> /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/python3.10/site-packages/lekiwi_control
+[0.557s] copying /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build/lib/lekiwi_control/__init__.py -> /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/python3.10/site-packages/lekiwi_control
+[0.557s] byte-compiling /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/python3.10/site-packages/lekiwi_control/cmd_vel_publisher.py to cmd_vel_publisher.cpython-310.pyc
+[0.558s] byte-compiling /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/python3.10/site-packages/lekiwi_control/__init__.py to __init__.cpython-310.pyc
+[0.558s] running install_data
+[0.558s] creating /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/share/ament_index
+[0.558s] creating /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/share/ament_index/resource_index
+[0.558s] creating /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/share/ament_index/resource_index/packages
+[0.558s] copying resource/lekiwi_control -> /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/share/ament_index/resource_index/packages
+[0.558s] copying package.xml -> /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/share/lekiwi_control
+[0.558s] running install_egg_info
+[0.559s] Copying ../build/lekiwi_control/lekiwi_control.egg-info to /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/python3.10/site-packages/lekiwi_control-0.0.1-py3.10.egg-info
+[0.560s] running install_scripts
+[0.574s] Installing cmd_vel_publisher script to /home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/lekiwi_control
+[0.574s] writing list of installed files to '/home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/install.log'
+[0.591s] Invoked command in '/home/acy/lekiwi/lekiwi_ws/lekiwi_control' returned '0': PYTHONPATH=/home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acy/lekiwi/lekiwi_ws/install/lekiwi_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/lekiwi_control build --build-base /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/build install --record /home/acy/lekiwi/lekiwi_ws/build/lekiwi_control/install.log --single-version-externally-managed install_data

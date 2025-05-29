@@ -1,0 +1,3 @@
+[console_scripts]
+cmd_vel_publisher = lekiwi_control.cmd_vel_publisher:main
+

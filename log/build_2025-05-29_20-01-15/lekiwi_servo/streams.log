@@ -1,0 +1,22 @@
+[0.388s] Invoking command in '/home/acy/lekiwi/lekiwi_ws/src/lekiwi_servo': PYTHONPATH=/home/acy/lekiwi/lekiwi_ws/build/lekiwi_servo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acy/lekiwi/lekiwi_ws/install/lekiwi_servo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lekiwi_servo build --build-base /home/acy/lekiwi/lekiwi_ws/build/lekiwi_servo/build install --record /home/acy/lekiwi/lekiwi_ws/build/lekiwi_servo/install.log --single-version-externally-managed install_data
+[0.537s] running egg_info
+[0.537s] writing ../../build/lekiwi_servo/lekiwi_servo.egg-info/PKG-INFO
+[0.537s] writing dependency_links to ../../build/lekiwi_servo/lekiwi_servo.egg-info/dependency_links.txt
+[0.538s] writing entry points to ../../build/lekiwi_servo/lekiwi_servo.egg-info/entry_points.txt
+[0.538s] writing requirements to ../../build/lekiwi_servo/lekiwi_servo.egg-info/requires.txt
+[0.538s] writing top-level names to ../../build/lekiwi_servo/lekiwi_servo.egg-info/top_level.txt
+[0.539s] reading manifest file '../../build/lekiwi_servo/lekiwi_servo.egg-info/SOURCES.txt'
+[0.539s] writing manifest file '../../build/lekiwi_servo/lekiwi_servo.egg-info/SOURCES.txt'
+[0.539s] running build
+[0.539s] running build_py
+[0.540s] running install
+[0.540s] running install_lib
+[0.541s] running install_data
+[0.541s] running install_egg_info
+[0.542s] removing '/home/acy/lekiwi/lekiwi_ws/install/lekiwi_servo/lib/python3.10/site-packages/lekiwi_servo-0.0.0-py3.10.egg-info' (and everything under it)
+[0.542s] Copying ../../build/lekiwi_servo/lekiwi_servo.egg-info to /home/acy/lekiwi/lekiwi_ws/install/lekiwi_servo/lib/python3.10/site-packages/lekiwi_servo-0.0.0-py3.10.egg-info
+[0.543s] running install_scripts
+[0.557s] Installing servo_controller script to /home/acy/lekiwi/lekiwi_ws/install/lekiwi_servo/lib/lekiwi_servo
+[0.557s] Installing servo_teleop script to /home/acy/lekiwi/lekiwi_ws/install/lekiwi_servo/lib/lekiwi_servo
+[0.557s] writing list of installed files to '/home/acy/lekiwi/lekiwi_ws/build/lekiwi_servo/install.log'
+[0.576s] Invoked command in '/home/acy/lekiwi/lekiwi_ws/src/lekiwi_servo' returned '0': PYTHONPATH=/home/acy/lekiwi/lekiwi_ws/build/lekiwi_servo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acy/lekiwi/lekiwi_ws/install/lekiwi_servo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lekiwi_servo build --build-base /home/acy/lekiwi/lekiwi_ws/build/lekiwi_servo/build install --record /home/acy/lekiwi/lekiwi_ws/build/lekiwi_servo/install.log --single-version-externally-managed install_data

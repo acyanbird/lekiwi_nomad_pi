@@ -1,0 +1,4 @@
+[console_scripts]
+servo_controller = lekiwi_servo.servo_controller:main
+servo_teleop = lekiwi_servo.servo_teleop:main
+
