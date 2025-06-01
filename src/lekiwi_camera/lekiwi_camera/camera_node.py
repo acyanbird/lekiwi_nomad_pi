@@ -13,7 +13,7 @@ class CameraNode(Node):
         super().__init__('camera_node')
         
         # 声明参数
-        self.declare_parameter('device_id', 2)
+        self.declare_parameter('device_id', 0)
         self.declare_parameter('width', 640)
         self.declare_parameter('height', 480)
         self.declare_parameter('fps', 30)
