@@ -19,7 +19,7 @@ class ServoTeleop(Node):
         self.settings = termios.tcgetattr(sys.stdin)
         
         self.get_logger().info('舵机遥操作节点已启动')
-        self.get_logger().info('使用 WASD 控制舵机，空格键停止，Ctrl+C 退出')
+        self.get_logger().info('使用 WASD 控制舵机，空格键停止，F键退出，Ctrl+C 退出')
         
     def get_key(self):
         tty.setraw(sys.stdin.fileno())
@@ -32,11 +32,13 @@ class ServoTeleop(Node):
         try:
             while rclpy.ok():
                 key = self.get_key()
-                if key in ['w', 'a', 's', 'd', ' ', 'q', 'e']:
+                if key in ['w', 'a', 's', 'd', ' ', 'q', 'e', 'f']:
                     msg = String()
                     msg.data = key
                     self.key_publisher.publish(msg)
                     self.get_logger().info(f'发送按键: {key}')
+                    if key == 'f':
+                        break
                 elif key == '\x03':  # Ctrl+C
                     break
         finally:
