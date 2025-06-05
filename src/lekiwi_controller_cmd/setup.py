@@ -20,7 +20,6 @@ setup(
     maintainer_email='acyanbird@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'servo = lekiwi_controller_cmd.servo:main',
