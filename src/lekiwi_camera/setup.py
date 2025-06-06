@@ -21,7 +21,9 @@ setup(
     license='Apache License 2.0',
     entry_points={
         'console_scripts': [
+            'node = lekiwi_camera.node:main',
             'camera_node = lekiwi_camera.camera_node:main',
+            'test_opencv = lekiwi_camera.test_opencv:main',
         ],
     },
 )
