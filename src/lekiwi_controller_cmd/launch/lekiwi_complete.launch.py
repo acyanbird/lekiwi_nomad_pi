@@ -4,15 +4,15 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         # 启动相机节点
-        # Node(
-        #     package='lekiwi_camera',
-        #     executable='node',
-        #     name='camera_node',
-        #     output='screen',
-        #     parameters=[{
-        #         'device_id': 0
-        #     }]
-        # ),
+        Node(
+            package='lekiwi_camera',
+            executable='node',
+            name='camera_node',
+            output='screen',
+            parameters=[{
+                'device_id': 0
+            }]
+        ),
         
         # 启动自定义 Kiwi 驱动控制器节点
         Node(
@@ -31,6 +31,23 @@ def generate_launch_description():
             parameters=[{
                 'port': '/dev/ttyACM0',
                 'baudrate': 1000000
+            }]
+        ),
+        
+        # 启动里程计节点
+        Node(
+            package='lekiwi_odom',
+            executable='odom_node',
+            name='omni_wheel_odom_node',
+            output='screen',
+            parameters=[{
+                'wheel_radius': 0.073,
+                'robot_radius': 0.15,
+                # 'wheel_angle_7': 3.14159,  # 180度 - 舵机7向后
+                # 'wheel_angle_8': 1.57080,  # 90度 - 舵机8向右
+                # 'wheel_angle_9': 0.0,      # 0度 - 舵机9向前
+                'ticks_per_revolution': 4095,
+                'publish_rate': 10.0
             }]
         ),
         
