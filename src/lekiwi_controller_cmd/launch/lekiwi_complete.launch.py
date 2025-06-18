@@ -37,7 +37,7 @@ def generate_launch_description():
         # 启动里程计节点
         Node(
             package='lekiwi_odom',
-            executable='odom_node',
+            executable='omni_wheel_odom_node',
             name='omni_wheel_odom_node',
             output='screen',
             parameters=[{
