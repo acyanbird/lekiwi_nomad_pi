@@ -104,6 +104,8 @@ class OmniWheelOdomNode(Node):
             self.get_logger().warn(f"无法设置波特率: {BAUDRATE}，将使用模拟数据")
 
         self.SCS_IDS = [7, 8, 9]
+        self.servo_ids = [7, 8, 9]
+
 
         # 初始化编码器数据
         if self.portHandler.is_open:
