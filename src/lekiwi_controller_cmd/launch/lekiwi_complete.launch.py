@@ -35,21 +35,21 @@ def generate_launch_description():
         ),
         
         # 启动里程计节点
-        Node(
-            package='lekiwi_odom',
-            executable='omni_wheel_odom_node',
-            name='omni_wheel_odom_node',
-            output='screen',
-            parameters=[{
-                'wheel_radius': 0.073,
-                'robot_radius': 0.15,
-                # 'wheel_angle_7': 3.14159,  # 180度 - 舵机7向后
-                # 'wheel_angle_8': 1.57080,  # 90度 - 舵机8向右
-                # 'wheel_angle_9': 0.0,      # 0度 - 舵机9向前
-                'ticks_per_revolution': 4095,
-                'publish_rate': 10.0
-            }]
-        ),
+        # Node(
+        #     package='lekiwi_odom',
+        #     executable='omni_wheel_odom_node',
+        #     name='omni_wheel_odom_node',
+        #     output='screen',
+        #     parameters=[{
+        #         'wheel_radius': 0.073,
+        #         'robot_radius': 0.15,
+        #         # 'wheel_angle_7': 3.14159,  # 180度 - 舵机7向后
+        #         # 'wheel_angle_8': 1.57080,  # 90度 - 舵机8向右
+        #         # 'wheel_angle_9': 0.0,      # 0度 - 舵机9向前
+        #         'ticks_per_revolution': 4095,
+        #         'publish_rate': 10.0
+        #     }]
+        # ),
         
         # #启动键盘控制节点（可选）
         # Node(
