@@ -74,7 +74,7 @@ def main(args=None):
                 rclpy.spin_once(node, timeout_sec=0.01) 
                 continue
 
-            ros_image_msg = bridge.cv2_to_imgmsg(frame, encoding="bgr8")
+            ros_image_msg = bridge.cv2_to_imgmsg(frame, encoding="rgb8")
             ros_image_msg.header.stamp = node.get_clock().now().to_msg()
             ros_image_msg.header.frame_id = "camera"
             publisher.publish(ros_image_msg)
