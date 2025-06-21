@@ -116,7 +116,7 @@ class OmniWheelOdomNode(Node):
                 elif scs_error != 0:
                     self.get_logger().warn(f"舵机 {i} 错误: {self.packetHandler.getRxPacketError(scs_error)}")
 
-                self.encoder_prev[i] = scs_present_position
+                self.encoder_prev[i - 7] = scs_present_position
                 # 设置运行模式为速度模式
                 scs_comm_result = self.packetHandler.write1ByteTxOnly(
                 self.portHandler, i, ADDR_SCS_OPERATION_MODE, 1)
