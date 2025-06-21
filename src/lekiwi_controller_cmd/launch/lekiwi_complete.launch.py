@@ -76,15 +76,15 @@ def generate_launch_description():
             executable='v4l2_camera_node',
             name='v4l2_camera_node', # Give it a unique name
             output='screen', # Print node output to console
-            parameters=[{
-                'video_device': LaunchConfiguration('v4l2_video_device'),
-                'image_size': [640, 480],  # 直接写死为整型数组
-                'pixel_format': LaunchConfiguration('v4l2_pixel_format'),
-                'framerate': LaunchConfiguration('v4l2_framerate'),
-                'frame_id': LaunchConfiguration('v4l2_frame_id'),
-                'camera_info_url': LaunchConfiguration('v4l2_camera_info_url'),
-                # 'use_compression': True # Uncomment if you want compressed images (e.g., /image_raw/compressed)
-            }]
+            # parameters=[{
+            #     'video_device': LaunchConfiguration('v4l2_video_device'),
+            #     'image_size': [640, 480],  # 直接写死为整型数组
+            #     'pixel_format': LaunchConfiguration('v4l2_pixel_format'),
+            #     'framerate': LaunchConfiguration('v4l2_framerate'),
+            #     'frame_id': LaunchConfiguration('v4l2_frame_id'),
+            #     'camera_info_url': LaunchConfiguration('v4l2_camera_info_url'),
+            #     # 'use_compression': True # Uncomment if you want compressed images (e.g., /image_raw/compressed)
+            # }]
         ),
         
         # Start custom Kiwi drive controller node
