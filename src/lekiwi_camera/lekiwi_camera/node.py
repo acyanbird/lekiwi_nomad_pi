@@ -28,9 +28,9 @@ def main(args=None):
     node.get_logger().info(f"[SUCCESS] Camera {DEVICE_ID} opened. Now attempting to set parameters...")
 
     # --- 新增：设置您指定的参数 ---
-    success = cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('Y', 'U', 'Y', 'V'))
-    if not success:
-        node.get_logger().warn("Failed to set FOURCC to YUYV.")
+    # success = cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('Y', 'U', 'Y', 'V'))
+    # if not success:
+    #     node.get_logger().warn("Failed to set FOURCC to YUYV.")
 
     # success = cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     # if not success:
