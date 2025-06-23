@@ -28,11 +28,10 @@ def main(args=None):
     node.get_logger().info(f"[SUCCESS] Camera {DEVICE_ID} opened. Now attempting to set parameters...")
 
     # --- 新增：设置您指定的参数 ---
-    # 设置的顺序有时会影响结果，先设置格式，再设置分辨率和帧率是比较稳妥的做法。
-    # success = cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
-    # if not success:
-    #     node.get_logger().warn("Failed to set FOURCC to MJPG.")
-        
+    success = cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('Y', 'U', 'Y', 'V'))
+    if not success:
+        node.get_logger().warn("Failed to set FOURCC to YUYV.")
+
     # success = cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     # if not success:
     #     node.get_logger().warn("Failed to set frame width to 640.")
