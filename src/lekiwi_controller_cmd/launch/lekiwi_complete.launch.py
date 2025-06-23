@@ -14,10 +14,13 @@ def generate_launch_description():
         #     }]
         # ),
         Node(
-        package='v4l2_camera',
-        executable='v4l2_camera_node',
-        name='v4l2_camera_node', # 给节点一个名字
-        output='screen', # 将节点的标准输出打印到控制  
+            package='v4l2_camera',
+            executable='v4l2_camera_node',
+            name='v4l2_camera_node',
+            parameters=[
+                {'time_per_frame': 0.1},
+                {'pixel_format': 'YUYV'}
+            ]
         ),      
         # 启动自定义 Kiwi 驱动控制器节点
         Node(
