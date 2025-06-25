@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>lekiwi_camera</name>
+  <name>lekiwi_odom</name>
   <version>0.0.0</version>
-  <description>ROS2 package for managing V4L2 camera devices</description>
+  <description>全向三轮机器人里程计节点</description>
   <maintainer email="acyanbird@gmail.com">acy</maintainer>
-  <license>Apache License 2.0</license>
+  <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
   <depend>sensor_msgs</depend>
-  <depend>cv_bridge</depend>
-  <depend>python3-opencv</depend>
+  <depend>tf2_ros</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
